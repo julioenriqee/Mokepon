@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+body{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Righteous', cursive;
+    background: #FF0032;
+}
+
+.titulo{
+    color: white;
+    font-size: 35px;
+}
+
+.subtitulos {
+    color: white;
+    font-size: 20px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #F48484;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    color: black;   
+    transform: scale(1.09);
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {  /* boton seleccionar*/
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin-top: 30px;
+}
+#boton-mascota:hover{
+    cursor: pointer;
+    color: black;
+    transform: scale(1.09);
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    color: black;
+    transform: scale(0.9);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #F48484;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Righteous', cursive;
+
+}
+
+#mensajes {
+    width: 280px;
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: blue;
+    font-family: 'Righteous', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vida-jugador, #vida-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+
+}
